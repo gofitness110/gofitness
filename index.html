@@ -10,7 +10,7 @@
 <link rel="apple-touch-icon" href="icon-180.png">
 <link rel="icon" href="icon-180.png">
 <!-- 沒開 JavaScript 時也會轉過去 -->
-<meta http-equiv="refresh" content="1;url=https://gofitness.gofitness.workers.dev/">
+<meta http-equiv="refresh" content="1;url=https://gofitness.gofitness.workers.dev/app/">
 <style>
   body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#F8F7F3;color:#303632;font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",Arial,sans-serif;text-align:center}
   .box{padding:32px 24px;max-width:420px}
@@ -23,12 +23,12 @@
 <div class="box">
   <h1>開練吧 約課系統搬新家了</h1>
   <p>正在帶你前往新的入口。<br>登入帳號與手機末 4 碼都跟以前一樣。<br>建議重新「加入主畫面」，之後從新的捷徑進入。</p>
-  <a class="go" id="go" href="https://gofitness.gofitness.workers.dev/">前往新入口</a>
+  <a class="go" id="go" href="https://gofitness.gofitness.workers.dev/app/">前往新入口</a>
 </div>
 <script>
 (function(){
   // 保留網址後面的參數（例如老師入口的 ?role=teacher）
-  var url='https://gofitness.gofitness.workers.dev/'+(location.search||'')+(location.hash||'');
+  var url='https://gofitness.gofitness.workers.dev/app/'+(location.search||'')+(location.hash||'');
   var a=document.getElementById('go');if(a)a.href=url;
   setTimeout(function(){location.replace(url);},300);
 })();
